@@ -1,12 +1,107 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ReWorth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps & Products</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #f9fafb;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-top: 2rem;
+    }
+    h1 {
+      color: #111827;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #6b7280;
+      font-size: 1.1rem;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .product-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 0;
+      color: #2563eb;
+    }
+    .product-desc {
+      color: #4b5563;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      border-top: 1px solid #f3f4f6;
+      padding-top: 1.5rem;
+    }
+    .links a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .links a:hover {
+      color: #312e81;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to ReWorth App!</h1>
-  <p><a href="/privacy.html">Privacy Policy</a></p>
+  
+  <header>
+    <h1>Our Products</h1>
+    <p class="subtitle">Discover our portfolio of mobile applications</p>
+  </header>
+
+  <div class="products-grid">
+    <!-- ReWorth -->
+    <div class="product-card">
+      <h2 class="product-title">ReWorth</h2>
+      <p class="product-desc">A smart app to help you manage, track, and discover value in your daily life. Keep everything organized and accessible.</p>
+      <div class="links">
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+
+    <!-- Mahjong Pocket Coach -->
+    <div class="product-card">
+      <h2 class="product-title">Mahjong Pocket Coach</h2>
+      <p class="product-desc">Your personal assistant to master Mahjong strategies, improve your skills, and track your game progress like a pro.</p>
+      <div class="links">
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
