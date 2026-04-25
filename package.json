@@ -1,0 +1,9 @@
+{
+    "name": "reworth-landing-page",
+    "version": "1.0.0",
+    "description": "AI-optimized landing page for ReWorth CPW app",
+    "scripts": {
+        "dev": "python3 -m http.server 8000",
+        "build": "echo 'No build step required for static site'"
+    }
+}
