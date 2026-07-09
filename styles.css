@@ -22,6 +22,8 @@
   --project-mahjong-1: #EF4444;
   --project-mahjong-2: #F59E0B;
   
+  --project-subwaywake-1: #06B6D4;
+  --project-subwaywake-2: #3B82F6;
   --project-museaimate-1: #FF8A00;
   --project-museaimate-2: #FF416C;
   
@@ -343,6 +345,7 @@ a {
 
 .project-reworth::before { background: linear-gradient(90deg, var(--project-reworth-1), var(--project-reworth-2)); }
 .project-mahjong::before { background: linear-gradient(90deg, var(--project-mahjong-1), var(--project-mahjong-2)); }
+.project-subwaywake::before { background: linear-gradient(90deg, var(--project-subwaywake-1), var(--project-subwaywake-2)); }
 .project-museaimate::before { background: linear-gradient(90deg, var(--project-museaimate-1), var(--project-museaimate-2)); }
 .project-mystery::before { background: linear-gradient(90deg, var(--project-mystery-1), var(--project-mystery-2)); }
 
@@ -353,6 +356,7 @@ a {
 
 .project-reworth:hover { box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.3); }
 .project-mahjong:hover { box-shadow: 0 20px 40px -10px rgba(245, 158, 11, 0.2); border-color: rgba(239, 68, 68, 0.3); }
+.project-subwaywake:hover { box-shadow: 0 20px 40px -10px rgba(6, 182, 212, 0.2); border-color: rgba(59, 130, 246, 0.3); }
 .project-museaimate:hover { box-shadow: 0 20px 40px -10px rgba(255, 138, 0, 0.2); border-color: rgba(255, 65, 108, 0.3); }
 .project-mystery:hover { box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.2); border-color: rgba(236, 72, 153, 0.3); }
 
@@ -375,6 +379,7 @@ a {
 
 .icon-reworth { background: rgba(16, 185, 129, 0.1); }
 .icon-mahjong { background: rgba(245, 158, 11, 0.1); }
+.icon-subwaywake { background: rgba(6, 182, 212, 0.1); }
 .icon-museaimate { background: rgba(255, 138, 0, 0.1); }
 .icon-mystery { background: rgba(139, 92, 246, 0.1); }
 
