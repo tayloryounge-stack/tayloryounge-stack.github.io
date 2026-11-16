@@ -348,6 +348,12 @@ a {
 .project-subwaywake::before { background: linear-gradient(90deg, var(--project-subwaywake-1), var(--project-subwaywake-2)); }
 .project-museaimate::before { background: linear-gradient(90deg, var(--project-museaimate-1), var(--project-museaimate-2)); }
 .project-mystery::before { background: linear-gradient(90deg, var(--project-mystery-1), var(--project-mystery-2)); }
+.project-first-table::before { background: linear-gradient(90deg, #C4621D, #4A7C59); }
+.project-first-table:hover { box-shadow: 0 20px 40px -10px rgba(196, 98, 29, 0.2); border-color: #C4621D; }
+.project-first-table .icon-first-table { border-radius: 14px; }
+.project-first-table .project-tags .tag { background: #F5F0E8; color: #5A3A22; }
+.project-first-table .btn-first-table { background: #A3511A; border-color: #A3511A; color: #FDFAF4; }
+.project-first-table .btn-first-table:hover { background: #F5F0E8; color: #5A3A22 !important; }
 
 .project-card:hover {
   transform: translateY(-8px);
