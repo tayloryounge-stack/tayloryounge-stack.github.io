@@ -20,7 +20,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=20261116-app-icons">
+  <link rel="stylesheet" href="styles.css?v=20261116-two-projects">
   
   <!-- JSON-LD Structured Data for Studio -->
   <script type="application/ld+json">
@@ -46,6 +46,18 @@
         "name": "First Table Coach: Mahjong",
         "applicationCategory": "EducationalApplication",
         "url": "https://funnyday.xyz/first-table-coach/"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "LeanClub: Stick Figure Buddy",
+        "applicationCategory": "HealthApplication",
+        "url": "https://apps.apple.com/us/app/leanclub-stick-figure-buddy/id6827574759?uo=4"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Mahjong People - Scorekeeping",
+        "applicationCategory": "UtilitiesApplication",
+        "url": "https://apps.apple.com/us/app/mahjong-people-scorekeeping/id6821504275?uo=4"
       }
     ]
   }
@@ -208,6 +220,52 @@
           </div>
         </article>
 
+        <!-- LeanClub / 薄肌派 -->
+        <article class="glass-card project-card project-leanclub reveal" id="leanclub">
+          <div class="project-header">
+            <img class="project-icon" src="assets/app-icons/leanclub.png" alt="" width="64" height="64" loading="lazy">
+            <div class="project-meta">
+              <span class="project-category" data-i18n="cat-leanclub">居家健身 / 训练计划</span>
+              <h3 class="project-title" data-i18n="title-leanclub">薄肌派</h3>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-desc" data-i18n="desc-leanclub">一个火柴人，陪你把今天的训练做完。通过简洁的动作演示和重点部位高亮，跟随适合自己目标与节奏的居家训练计划，一组组完成练习。搭配休息计时、训练记录和身体数据追踪，看见自己的坚持与变化。</p>
+            <div class="project-tags">
+              <span class="tag" data-i18n="tag-leanclub-figure">火柴人示范</span>
+              <span class="tag" data-i18n="tag-leanclub-plan">居家训练</span>
+              <span class="tag" data-i18n="tag-leanclub-progress">训练记录</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://apps.apple.com/us/app/leanclub-stick-figure-buddy/id6827574759?uo=4" class="btn btn-project btn-leanclub" target="_blank" rel="noopener"><span data-i18n="btn-app-store">App Store 查看</span><span aria-hidden="true">↗</span></a>
+            <a class="project-support" href="lianbaoji-support.html#zh-Hans" data-project-support="lianbaoji-support.html" data-i18n="btn-project-support">支持与帮助</a>
+          </div>
+        </article>
+
+        <!-- Mahjong People / 麻将人 -->
+        <article class="glass-card project-card project-mahjong-people reveal" id="mahjong-people">
+          <div class="project-header">
+            <img class="project-icon" src="assets/app-icons/mahjong-people.png" alt="" width="64" height="64" loading="lazy">
+            <div class="project-meta">
+              <span class="project-category" data-i18n="cat-mahjong-people">牌局记分 / 个人记录</span>
+              <h3 class="project-title" data-i18n="title-mahjong-people">麻将人</h3>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-desc" data-i18n="desc-mahjong-people">为线下麻将准备的一本随身记分簿。补录已结束的牌局，或在新对局中逐手记录得分；整理常用牌友与场地，按日、周、月、年回顾累计得分、胜率和趋势。无需注册，记录保存在本机，也可复制为 CSV 文本自行整理。</p>
+            <div class="project-tags">
+              <span class="tag" data-i18n="tag-mahjong-people-score">逐手记分</span>
+              <span class="tag" data-i18n="tag-mahjong-people-stats">战绩统计</span>
+              <span class="tag" data-i18n="tag-mahjong-people-players">牌友管理</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://apps.apple.com/us/app/mahjong-people-scorekeeping/id6821504275?uo=4" class="btn btn-project btn-mahjong-people" target="_blank" rel="noopener"><span data-i18n="btn-app-store">App Store 查看</span><span aria-hidden="true">↗</span></a>
+            <a class="project-support" href="mahjong-people-support.html#zh-Hans" data-project-support="mahjong-people-support.html" data-i18n="btn-project-support">支持与帮助</a>
+          </div>
+        </article>
+
         <!-- First Table Coach: American Mahjong learning -->
         <article class="glass-card project-card project-first-table reveal">
           <div class="project-header">
@@ -230,7 +288,7 @@
           </div>
         </article>
 
-        <!-- Project 6: Mystery / Coming Soon -->
+        <!-- Mystery / Coming Soon -->
         <article class="glass-card project-card project-mystery reveal">
           <div class="project-header">
             <div class="project-icon icon-mystery">🚀</div>
@@ -324,7 +382,7 @@
   </footer>
 
   <!-- JavaScript -->
-  <script src="i18n.js?v=20261116-mahjong-copy"></script>
+  <script src="i18n.js?v=20261116-two-projects"></script>
   <script src="script.js"></script>
 </body>
 </html>

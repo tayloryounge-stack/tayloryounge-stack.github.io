@@ -355,6 +355,17 @@ a {
 .project-first-table .btn-first-table { background: #A3511A; border-color: #A3511A; color: #FDFAF4; }
 .project-first-table .btn-first-table:hover { background: #F5F0E8; color: #5A3A22 !important; }
 
+.project-leanclub::before { background: linear-gradient(90deg, #C8F031, #EF5B3B); }
+.project-mahjong-people::before { background: linear-gradient(90deg, #17342E, #D9B963); }
+.project-leanclub:hover { border-color: #C8F031; box-shadow: 0 20px 40px -10px rgba(200, 240, 49, 0.16); }
+.project-mahjong-people:hover { border-color: #D9B963; box-shadow: 0 20px 40px -10px rgba(217, 185, 99, 0.16); }
+.project-leanclub .btn-leanclub { background: #C8F031; color: #16171B; border-color: #C8F031; }
+.project-leanclub .btn-leanclub:hover { background: #EEF9C8; color: #16171B !important; }
+.project-mahjong-people .btn-mahjong-people { background: #F5F0E5; color: #17342E; border-color: #D9B963; }
+.project-mahjong-people .btn-mahjong-people:hover { background: #D9B963; color: #17342E !important; }
+.project-support { display: block; text-align: center; margin-top: 14px; color: var(--text-secondary); font-size: 0.8125rem; text-underline-offset: 4px; }
+.project-support:hover { color: var(--text-primary); text-decoration: underline; }
+
 .project-card:hover {
   transform: translateY(-8px);
   background: rgba(255, 255, 255, 0.05);

@@ -29,6 +29,20 @@ const translations = {
     "tag-voice": "Voice Setup",
     "tag-alarm": "Location Alarm",
     "tag-commute": "Commute Guard",
+    "title-leanclub": "LeanClub",
+    "cat-leanclub": "Home Fitness / Workout Plans",
+    "desc-leanclub": "A stick figure buddy to help you finish today's workout. Follow clear exercise demonstrations and highlighted muscle areas, with home workout plans tailored to your goals and pace. Rest timers, workout logs and body measurements help you keep track of your consistency and progress.",
+    "tag-leanclub-figure": "Stick Figure Demos",
+    "tag-leanclub-plan": "Home Workouts",
+    "tag-leanclub-progress": "Workout Logs",
+    "title-mahjong-people": "Mahjong People",
+    "cat-mahjong-people": "Scorekeeping / Personal Records",
+    "desc-mahjong-people": "A pocket scorebook for Mahjong around a real table. Log completed games or record a new session hand by hand, organize regular players and venues, and review scores, win rates and trends by day, week, month or year. Records stay on your device with no account required; copy them as CSV text for your own spreadsheets.",
+    "tag-mahjong-people-score": "Hand-by-Hand Scores",
+    "tag-mahjong-people-stats": "Game Stats",
+    "tag-mahjong-people-players": "Player Management",
+    "btn-app-store": "View on App Store",
+    "btn-project-support": "Support & Help",
     "cat-first-table": "American Mahjong / Learning",
     "desc-first-table": "Your first table, a little more confidence. Nine guided modules and interactive exercises take you from recognizing tiles and reading a practice card to the Charleston and a scripted first hand. Get ready for your first American Mahjong game.",
     "tag-first-table-course": "9 Learning Modules",
@@ -82,6 +96,20 @@ const translations = {
     "tag-voice": "语音设定",
     "tag-alarm": "到站提醒",
     "tag-commute": "通勤守护",
+    "title-leanclub": "薄肌派",
+    "cat-leanclub": "居家健身 / 训练计划",
+    "desc-leanclub": "一个火柴人，陪你把今天的训练做完。通过简洁的动作演示和重点部位高亮，跟随适合自己目标与节奏的居家训练计划，一组组完成练习。搭配休息计时、训练记录和身体数据追踪，看见自己的坚持与变化。",
+    "tag-leanclub-figure": "火柴人示范",
+    "tag-leanclub-plan": "居家训练",
+    "tag-leanclub-progress": "训练记录",
+    "title-mahjong-people": "麻将人",
+    "cat-mahjong-people": "牌局记分 / 个人记录",
+    "desc-mahjong-people": "为线下麻将准备的一本随身记分簿。补录已结束的牌局，或在新对局中逐手记录得分；整理常用牌友与场地，按日、周、月、年回顾累计得分、胜率和趋势。无需注册，记录保存在本机，也可复制为 CSV 文本自行整理。",
+    "tag-mahjong-people-score": "逐手记分",
+    "tag-mahjong-people-stats": "战绩统计",
+    "tag-mahjong-people-players": "牌友管理",
+    "btn-app-store": "App Store 查看",
+    "btn-project-support": "支持与帮助",
     "cat-first-table": "美式麻将 / 入门学习",
     "desc-first-table": "第一次上桌，多一点从容。通过 9 个循序渐进的学习模块和互动练习，从认识牌面、读懂牌卡，到 Charleston 换牌与第一手牌教学，准备好你的第一场美式麻将。",
     "tag-first-table-course": "9 个学习模块",
@@ -134,6 +162,10 @@ function applyLanguage(lang) {
   
   // Update HTML lang attribute
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+  document.querySelectorAll('[data-project-support]').forEach(link => {
+    link.setAttribute('href', `${link.getAttribute('data-project-support')}#${lang === 'zh' ? 'zh-Hans' : 'en'}`);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
