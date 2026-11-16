@@ -26,8 +26,8 @@
 - [x] Update sitemap and verify homepage plus new route.
 
 ### Task 3: Publish
-- [ ] Review diff and resources; commit exact verified changes.
-- [ ] Publish through existing GitHub Pages branch and verify live URLs.
+- [x] Review diff and resources; commit exact verified changes.
+- [x] Publish through existing GitHub Pages branch and verify live URLs.
 
 ## Validation record
 - Browser checked at 320, 421, 768 and 1440 pixels; no horizontal overflow or broken images.
@@ -35,3 +35,4 @@
 - Preview selection, native FAQ and homepage-to-landing navigation work; console clean.
 - Source integrity check verified local resources, anchors, H1, IDs, JSON-LD; JavaScript syntax and whitespace checks passed.
 - Independent review found CTA contrast 3.94:1; changed button background to app terracottaDark #A3511A (5.38:1 with #FDFAF4 text). Small orange labels also use dark variant.
+- GitHub Pages deployment run 43844612285 completed successfully on 2026-11-16; final follow-up corrects screenshot alternative text to describe the tile lesson precisely.

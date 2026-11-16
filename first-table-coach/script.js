@@ -29,7 +29,7 @@
       closingLabel: 'FIRST TABLE COACH', closingTitle1: 'There’s a seat', closingTitle2: 'with your name on it.', closingDesc: 'A few small lessons now.\nA little more confidence on game night.',
       contact: 'Ask about the release', footerNote: 'Small ideas. A little more joy.', privacy: 'Privacy', terms: 'Terms', support: 'Contact support',
       pageTitle: 'First Table Coach — Learn American Mahjong, one tile at a time', description: 'Get ready for your first American Mahjong table with nine guided learning modules, tile practice and a step-by-step first hand. An app by Funnyday Studio.',
-      homeAlt: 'First Table Coach home screen showing a game-night countdown, the next lesson and a wooden progress rack', tilesAlt: 'Tile library showing American Mahjong suits and tiles', learningAlt: 'Guided learning path with nine American Mahjong modules'
+      homeAlt: 'First Table Coach home screen showing a game-night countdown, the next lesson and a wooden progress rack', tilesAlt: 'Tile recognition lesson explaining Bams with illustrated bamboo tiles', learningAlt: 'Guided learning path with nine American Mahjong modules'
     },
     zh: {
       skip: '跳转到内容', navLearn: '学习路线', navFaq: '常见问题', studio: 'Funnyday 出品 ↗',
@@ -59,7 +59,7 @@
       closingLabel: 'FIRST TABLE COACH · 美式麻将入门', closingTitle1: '牌桌旁，', closingTitle2: '为你留了一个位置。', closingDesc: '现在，学会一点点。\n上桌时，就能更从容一点。',
       contact: '咨询上线进展', footerNote: '小小的创意，多一点生活的乐趣。', privacy: '隐私政策', terms: '用户协议', support: '联系支持',
       pageTitle: 'First Table Coach 美式麻将 — 从认识牌面到第一次上桌', description: '用 9 个循序渐进的学习模块、识牌练习和第一手牌教学，准备好你的第一场美式麻将。Funnyday Studio 出品。',
-      homeAlt: 'First Table Coach 首页，展示牌局倒计时、下一节课程和木质学习进度牌架', tilesAlt: '美式麻将牌库，展示不同花色与牌面', learningAlt: '包含 9 个美式麻将模块的循序渐进学习路线'
+      homeAlt: 'First Table Coach 首页，展示牌局倒计时、下一节课程和木质学习进度牌架', tilesAlt: '识牌课程，展示条牌说明和竹节牌面', learningAlt: '包含 9 个美式麻将模块的循序渐进学习路线'
     }
   };
   const images = { home: 'assets/home.png', tiles: 'assets/tiles.png', learning: 'assets/learning.png' };
