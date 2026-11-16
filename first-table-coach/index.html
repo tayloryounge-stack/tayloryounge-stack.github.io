@@ -16,8 +16,8 @@
   <link rel="apple-touch-icon" href="assets/app-icon.png">
   <link rel="preload" href="assets/Lora-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/Outfit-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261116-languages">
+  <script src="script.js?v=20261116-languages" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"First Table Coach: Mahjong","applicationCategory":"EducationalApplication","operatingSystem":"iOS","url":"https://funnyday.xyz/first-table-coach/","image":"https://funnyday.xyz/first-table-coach/assets/app-icon.png","description":"An independent American Mahjong learning app with nine guided modules, tile exercises and a scripted first hand.","publisher":{"@type":"Organization","name":"Funnyday Studio","url":"https://funnyday.xyz/"}}</script>
 </head>
 <body>
@@ -27,7 +27,12 @@
     <nav aria-label="Main navigation">
       <a class="nav-detail" href="#learn" data-copy="navLearn">The learning path</a>
       <a class="nav-detail" href="#questions" data-copy="navFaq">Good to know</a>
-      <button class="language" type="button" aria-label="切换为中文" data-language-toggle>中文</button>
+      <select class="language" aria-label="Language" data-language-select>
+        <option value="en" lang="en">English</option>
+        <option value="zh-Hans" lang="zh-Hans">简体中文</option>
+        <option value="zh-Hant" lang="zh-Hant">繁體中文</option>
+        <option value="es" lang="es">Español</option>
+      </select>
       <a class="studio-link" href="/" data-copy="studio">By Funnyday ↗</a>
     </nav>
   </header>
@@ -42,10 +47,10 @@
         <div class="hero-note"><span class="note-mark" aria-hidden="true">✳</span><p data-copy="heroNote">No experience needed.<br>Just a little curiosity, and a place to begin.</p></div>
       </div>
       <div class="hero-visual">
-        <div class="table-mat" aria-hidden="true"><span class="mat-corner">FT / 01</span><span class="mat-caption">A LITTLE PRACTICE. A LOVELY GAME NIGHT.</span></div>
+        <div class="table-mat" aria-hidden="true"><span class="mat-corner">FT / 01</span><span class="mat-caption" data-copy="matCaption">A LITTLE PRACTICE. A LOVELY GAME NIGHT.</span></div>
         <div class="phone"><img src="assets/home.png" alt="First Table Coach home screen showing a game-night countdown, the next lesson and a wooden progress rack" width="1260" height="2736" fetchpriority="high" data-image="home"></div>
         <div class="paper-note"><span data-copy="noteLabel">YOUR NEXT CHAPTER</span><strong data-copy="noteTitle">From “what’s a Bam?”<br>to “my turn.”</strong><span class="note-arrow" aria-hidden="true">↗</span></div>
-        <div class="tile-stamp" aria-hidden="true"><span>FIRST TABLE</span><b>✺</b><span>ONE TILE AT A TIME</span></div>
+        <div class="tile-stamp" aria-hidden="true"><span>FIRST TABLE</span><b>✺</b><span data-copy="stampMotto">ONE TILE AT A TIME</span></div>
       </div>
     </section>
 
@@ -56,7 +61,7 @@
       <div class="path">
         <article class="path-step"><span class="step-number">01 — 03</span><div class="tile-group" aria-hidden="true"><span class="mahjong-tile bamboo">┃<br>┃</span><span class="mahjong-tile crak">三<br><small>萬</small></span><span class="mahjong-tile dot">◉</span></div><h3 data-copy="step1Title">Meet your new essentials.</h3><p data-copy="step1Desc">Start with the goal of the game, recognize the tiles and suits, then explore the colors, symbols and groups on a practice card.</p><span class="step-foot" data-copy="step1Foot">THE TABLE · THE TILES · THE CARD</span></article>
         <article class="path-step"><span class="step-number">04 — 06</span><div class="pass-diagram" aria-hidden="true"><span>→</span><span>↓</span><span>←</span></div><h3 data-copy="step2Title">Find the flow of play.</h3><p data-copy="step2Desc">Build the wall, follow the turns, and learn the Charleston. Get comfortable with passing, calls and exposures.</p><span class="step-foot" data-copy="step2Foot">THE WALL · THE CHARLESTON · THE CALLS</span></article>
-        <article class="path-step"><span class="step-number">07 — 09</span><div class="ready-card" aria-hidden="true">✓<span>READY<br>FOR THE TABLE</span></div><h3 data-copy="step3Title">Put it all together.</h3><p data-copy="step3Desc">Choose a direction for your hand, walk through a scripted first hand, and keep a game-night checklist close by.</p><span class="step-foot" data-copy="step3Foot">A DIRECTION · A FIRST HAND · GAME NIGHT</span></article>
+        <article class="path-step"><span class="step-number">07 — 09</span><div class="ready-card" aria-hidden="true">✓<span data-copy="readyBadge">READY<br>FOR THE TABLE</span></div><h3 data-copy="step3Title">Put it all together.</h3><p data-copy="step3Desc">Choose a direction for your hand, walk through a scripted first hand, and keep a game-night checklist close by.</p><span class="step-foot" data-copy="step3Foot">A DIRECTION · A FIRST HAND · GAME NIGHT</span></article>
       </div>
       <p class="course-note"><span aria-hidden="true">✳</span><span data-copy="courseNote">The full nine-module course unlocks with a one-time purchase. No recurring subscription.</span></p>
     </section>

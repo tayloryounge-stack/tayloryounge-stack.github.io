@@ -36,3 +36,11 @@
 - Source integrity check verified local resources, anchors, H1, IDs, JSON-LD; JavaScript syntax and whitespace checks passed.
 - Independent review found CTA contrast 3.94:1; changed button background to app terracottaDark #A3511A (5.38:1 with #FDFAF4 text). Small orange labels also use dark variant.
 - GitHub Pages deployment run 43844612285 completed successfully on 2026-11-16; final follow-up corrects screenshot alternative text to describe the tile lesson precisely.
+
+## Language follow-up (2026-11-16)
+- [x] Replace destination-language toggle with a native current-language selector.
+- [x] Add Traditional Chinese and Spanish; localize screenshots and legal links for all four app languages.
+- [x] Preserve explicit URL priority, regional aliases and saved choice without requiring storage.
+- [x] Verify all 77 translation keys per locale and 12 screenshot paths, native selection, reload persistence, regional aliases and preview changes in the browser.
+- [x] Check 320px and 1440px layouts; no horizontal overflow, broken images or console warnings/errors.
+- [x] Independent review found no important issues.
