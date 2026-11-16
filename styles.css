@@ -389,6 +389,13 @@ a {
 .icon-museaimate { background: rgba(255, 138, 0, 0.1); }
 .icon-mystery { background: rgba(139, 92, 246, 0.1); }
 
+img.project-icon {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
 .project-category {
   font-size: 0.875rem;
   color: var(--text-tertiary);
