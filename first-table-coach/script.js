@@ -139,10 +139,10 @@
     matCaption: 'UN POCO DE PRÁCTICA. UNA GRAN NOCHE DE JUEGO.', stampMotto: 'UNA FICHA A LA VEZ', readyBadge: 'LISTO\nPARA LA MESA'
   });
   const locales = {
-    en: { htmlLang: 'en', assetDirectory: 'assets', legal: 'en' },
-    'zh-Hans': { htmlLang: 'zh-Hans', assetDirectory: 'assets/zh-Hans', legal: 'zh-Hans' },
-    'zh-Hant': { htmlLang: 'zh-Hant', assetDirectory: 'assets/zh-Hant', legal: 'zh-Hant' },
-    es: { htmlLang: 'es', assetDirectory: 'assets/es', legal: 'es' }
+    en: { htmlLang: 'en', assetDirectory: 'assets', legal: 'en', store: 'https://apps.apple.com/us/app/first-table-coach-mahjong/id6830724702' },
+    'zh-Hans': { htmlLang: 'zh-Hans', assetDirectory: 'assets/zh-Hans', legal: 'zh-Hans', store: 'https://apps.apple.com/cn/app/id6830724702' },
+    'zh-Hant': { htmlLang: 'zh-Hant', assetDirectory: 'assets/zh-Hant', legal: 'zh-Hant', store: 'https://apps.apple.com/tw/app/id6830724702' },
+    es: { htmlLang: 'es', assetDirectory: 'assets/es', legal: 'es', store: 'https://apps.apple.com/es/app/first-table-coach-mahjong/id6830724702' }
   };
   const preferenceKey = 'first-table-coach-language';
   function supportedLanguage(value) {
@@ -164,7 +164,10 @@
     return `${locales[language].assetDirectory}/${name}.png`;
   }
   let selectedPreview = 'tiles';
-  const initialQuery = supportedLanguage(new URLSearchParams(window.location.search).get('lang'));
+  const pageParams = new URLSearchParams(window.location.search);
+  const initialQuery = supportedLanguage(pageParams.get('lang'));
+  const providerToken = pageParams.get('pt');
+  const campaignToken = pageParams.get('ct');
   const deviceLanguage = (navigator.languages || [navigator.language]).map(supportedLanguage).find(Boolean);
   let language = initialQuery || storedLanguage() || deviceLanguage || 'en';
   function renderLanguage() {
@@ -194,6 +197,16 @@
     const preview = document.querySelector('#preview-image');
     preview.src = previewSource(selectedPreview);
     preview.alt = dictionary[`${selectedPreview}Alt`];
+    const storeUrl = new URL(locales[language].store);
+    // Preserve Apple Campaign Link parameters when a campaign is shared via this page.
+    if (/^\d+$/.test(providerToken) && campaignToken?.trim() && campaignToken.length <= 30) {
+      storeUrl.searchParams.set('pt', providerToken);
+      storeUrl.searchParams.set('ct', campaignToken);
+      storeUrl.searchParams.set('mt', '8');
+    }
+    document.querySelectorAll('[data-app-download]').forEach(link => {
+      link.href = storeUrl.href;
+    });
     document.querySelectorAll('[data-legal]').forEach(link => {
       link.href = `/first-table-coach-${link.dataset.legal}.html#${locales[language].legal}`;
     });

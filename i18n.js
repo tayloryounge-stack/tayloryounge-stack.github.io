@@ -167,6 +167,13 @@ function applyLanguage(lang) {
   // Update HTML lang attribute
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
 
+  const firstTableDownload = document.querySelector('[data-first-table-download]');
+  if (firstTableDownload) {
+    firstTableDownload.href = lang === 'zh'
+      ? 'https://apps.apple.com/cn/app/id6830724702'
+      : 'https://apps.apple.com/us/app/first-table-coach-mahjong/id6830724702';
+  }
+
   document.querySelectorAll('[data-project-support]').forEach(link => {
     link.setAttribute('href', `${link.getAttribute('data-project-support')}#${lang === 'zh' ? 'zh-Hans' : 'en'}`);
   });
